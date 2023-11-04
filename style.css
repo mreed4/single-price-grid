@@ -2,6 +2,7 @@
 
 :root {
   font-family: "Karla", sans-serif;
+  font-weight: 400;
 
   /* Primary colors */
   --cyan: hsl(179, 62%, 43%);
@@ -13,16 +14,14 @@
 
   font-size: 16px;
   background-color: var(--light-gray);
+
+  --main-width: 44rem;
 }
 
 * {
   box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -34,10 +33,119 @@ body {
   min-height: 100dvh;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--cyan);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h2,
+p {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--bright-yellow);
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.1);
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 40rem;
+  width: var(--main-width);
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.1);
+  overflow: hidden;
+}
+
+.join-our-community {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  padding: 2rem;
+}
+
+.pricing-and-why-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan);
+  color: white;
+}
+
+p.primary {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+p.secondary {
+  color: var(--grayish-blue);
+  line-height: 1.5;
+}
+
+.pricing-and-why-us > div {
+  flex: 1;
+  padding: 2.35rem 2rem;
+  height: 100%;
+}
+
+.price-per-month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+.monthly-subscription {
+  background-color: var(--cyan);
+  height: 100%;
+}
+
+.monthly-subscription .larger {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.why-us {
+  /* Windows Powertoys Color Picker */
+  background-color: hsl(179, 56%, 48%);
 }
