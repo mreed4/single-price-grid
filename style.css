@@ -149,3 +149,29 @@ p.secondary {
   /* Windows Powertoys Color Picker */
   background-color: hsl(179, 56%, 48%);
 }
+
+@media screen and (max-width: 375px) {
+  :root {
+    --main-width: 100%;
+  }
+  .container {
+    border-radius: 0;
+  }
+  .pricing-and-why-us {
+    flex-direction: column;
+  }
+  .pricing-and-why-us > div {
+    padding: 2rem 1rem;
+  }
+  .monthly-subscription {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .price-per-month {
+    margin-bottom: 1rem;
+  }
+  .why-us {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+}
