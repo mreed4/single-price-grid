@@ -75,7 +75,7 @@ button {
   background-color: var(--bright-yellow);
   color: white;
   width: 100%;
-  box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.3);
 }
 
 .container {
@@ -161,10 +161,9 @@ p.secondary {
     flex-direction: column;
   }
   .pricing-and-why-us > div {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
   .monthly-subscription {
-    margin-bottom: 2rem;
     width: 100%;
   }
   .price-per-month {
